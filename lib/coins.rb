@@ -5,6 +5,14 @@ class Float
                    "Nickels" => 0,
                    "Pennies" => 0,
                  }
-    # remainder = self
+    remainder = self
+
+    until remainder < 0.25
+      coin_purse["Quarters"] += 1
+      remainder -= 0.25
+    end
+
+    coin_purse
+
   end
 end
