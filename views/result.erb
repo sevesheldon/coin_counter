@@ -1,0 +1,35 @@
+<h1>Your total was: $<%= @coin_purse["Total"] %></h1>
+
+<h1>Coin breakdown:</h1>
+
+<% if @coin_purse["Quarters"] > 0 %>
+  <% if @coin_purse["Quarters"] == 1 %>
+        <h1><%= @coin_purse["Quarters"] %> Quarter<h1>
+  <% else %>
+        <h1><%= @coin_purse["Quarters"] %> Quarters</h1>
+  <% end %>
+<% end %>
+
+<% if @coin_purse["Dimes"] > 0 %>
+  <% if @coin_purse["Dimes"] == 1 %>
+        <h1><%= @coin_purse["Dimes"] %> Dime<h1>
+  <% else %>
+        <h1><%= @coin_purse["Dimes"] %> Dimes</h1>
+  <% end %>
+<% end %>
+
+<% if @coin_purse["Nickels"] > 0 %>
+  <% if @coin_purse["Nickels"] == 1 %>
+        <h1><%= @coin_purse["Nickels"] %> Nickel<h1>
+  <% else %>
+        <h1><%= @coin_purse["Nickels"] %> Nickels</h1>
+  <% end %>
+<% end %>
+
+<% if @coin_purse["Pennies"] > 0 %>
+  <% if @coin_purse["Pennies"] == 1 %>
+        <h1><%= @coin_purse["Pennies"] %> Penny<h1>
+  <% else %>
+        <h1><%= @coin_purse["Pennies"] %> Pennies</h1>
+  <% end %>
+<% end %>

@@ -4,6 +4,7 @@ class Float
                    "Dimes" => 0,
                    "Nickels" => 0,
                    "Pennies" => 0,
+                   "Total" => self
                  }
     remainder = self.*(100).to_i
 

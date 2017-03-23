@@ -10,6 +10,7 @@ describe('Float#coins') do
                        "Dimes" => 0,
                        "Nickels" => 0,
                        "Pennies" => 0,
+                       "Total" => 0.0
                      }))
   end
 
@@ -19,6 +20,7 @@ describe('Float#coins') do
                        "Dimes" => 0,
                        "Nickels" => 0,
                        "Pennies" => 0,
+                       "Total" => 0.50
                      }))
   end
 
@@ -28,6 +30,7 @@ describe('Float#coins') do
                        "Dimes" => 2,
                        "Nickels" => 0,
                        "Pennies" => 0,
+                       "Total" => 0.20
                      }))
   end
 
@@ -37,6 +40,7 @@ describe('Float#coins') do
                        "Dimes" => 0,
                        "Nickels" => 1,
                        "Pennies" => 0,
+                       "Total" => 0.05
                      }))
   end
 
@@ -46,6 +50,7 @@ describe('Float#coins') do
                        "Dimes" => 0,
                        "Nickels" => 0,
                        "Pennies" => 4,
+                       "Total" => 0.04
                      }))
   end
 
@@ -55,6 +60,7 @@ describe('Float#coins') do
                        "Dimes" => 0,
                        "Nickels" => 1,
                        "Pennies" => 1,
+                       "Total" => 0.81
                      }))
   end
 
