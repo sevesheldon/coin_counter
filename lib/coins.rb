@@ -5,11 +5,26 @@ class Float
                    "Nickels" => 0,
                    "Pennies" => 0,
                  }
-    remainder = self
+    remainder = self.*(100).to_i
 
-    until remainder < 0.25
+    until remainder < 25
       coin_purse["Quarters"] += 1
-      remainder -= 0.25
+      remainder -= 25
+    end
+
+    until remainder < 10
+      coin_purse["Dimes"] += 1
+      remainder -= 10
+    end
+
+    until remainder < 05
+      coin_purse["Nickels"] += 1
+      remainder -= 5
+    end
+
+    until remainder < 1
+      coin_purse["Pennies"] += 1
+      remainder -= 1
     end
 
     coin_purse
